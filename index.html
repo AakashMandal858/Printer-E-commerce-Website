@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky-TECH E-commerce Website </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+    <div class="informations">
+       <p class="info1"> contact:9823918301 || email:skytech5710@gmail.com || address:putalisadak, Kathmandu</p>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/Sky-TECH.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">  
+                       
+                        <li><a href="pages/product.html">Products</a></li>
+                        <li><a href="pages/blog page.html">Blog</a></li>
+                        <li><a href="pages/r1.html">Research</a></li>
+                        <li><a href=""><img src="images/cartlogo.png" class="cartlogo" width="30px" height="30px"></a></li>
+                        <li><a href="pages/sign.html">Account</a></li>
+                        <li><a href="pages/about us.html">About Us</a></li>                        
+                    </ul>
+                </nav>
+                
+                <img src="images/menulogo.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <!-------- featured categories --------->
+<div class="human">
+   <div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+            <img src="images/advert17.jpg">
+        </div>
+        <div class="slide">
+            <img src="images/advert10.jpg">
+        </div>
+        <div class="slide">
+            <img src="images/advert.jpg">
+        </div>
+        <div class="slide">
+            <img src="images/advert7.jpg">
+        </div>
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+
+    </div>
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+   </div>
+   </div>
+   <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4) {
+            counter = 1;
+        }
+    }, 5000);
+
+   </script>
+   
+
+    <!----------- brands ------------>
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <a href="pages/hp.html"><img src="images/hp.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="pages/dell.html"><img src="images/dell.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="pages/canon.html"><img src="images/canon1.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="pages/brother.html"><img src="images/brother.png"></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-------- featured products --------->
+    <div class="small-container">
+   
+        <h2 class="title">Offers</h2>
+        <div class="row">
+   
+            <div class="col-4">
+                <img src="images/offer1.jpg">
+                <h4>Dell - E515dw Wireless Black-and-White All-In-One Laser Printer - Black</h4>
+                <p><s>Rs. 33,000</s></p>
+                <p>Rs. 25,000</p>
+               <a href="homepage/home1.html"> <button class="btn">ADD TO CART</button></a>
+            </div>
+           
+            <div class="col-4">
+                <img src="images/offer2.jpg">
+                <h4>HP 107w Single Function Laser Printer</h4>
+                <p><s>Rs. 30,000</s></p>
+                <p>Rs. 20,000</p>
+                <a href="homepage/offer2.html" class="btn">ADD TO CART</a>
+            </div>
+           
+            <div class="col-4">
+                <img src="images/offer3..jpg">
+                <h4>Brother 3 in 1 Color Inkjet Printer</h4>
+                <p><s>Rs. 20,000</s></p>
+                <p>Rs. 15,000</p>
+                <a href="homepage/offer3.html" class="btn">ADD TO CART</a>
+            </div>
+   
+            <div class="col-4">
+                <img src="images/offer4.jpg">
+                <h4>Canon PIXMA G670 Inkjet Printer</h4>
+                <p><s>Rs. 40,000</s></p>
+                <p>Rs. 34,000</p>
+                <a href="homepage/offer4.html" class="btn">ADD TO CART</a>
+            </div>
+        </div>
+   <!---latest product page-->
+        <h2 class="title">Latest products</h2>
+        <div class="row">
+   
+            <div class="col-4">
+                <img src="images/H4.png">
+                <h4>Epson Stylus Photo R240 Review</h4>
+
+                <p>Rs. 17,000</p>
+                <a href="homepage/prod1.html" class="btn">ADD TO CART</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/D4.png">
+                <h4>Dell h625cdw Wireless color printer</h4>
+
+                <p>Rs. 50,000</p>
+                <a href="homepage/prod2.html" class="btn">ADD TO CART</a>
+            </div>
+   
+            <div class="col-4">
+                <img src="images/C4.png">
+                <h4>canon PIXMA MX395</h4>
+
+                <p>Rs. 59,000</p>
+                <a href="homepage/prod3.html" class="btn">ADD TO CART</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/B4.png">
+                <h4>Brother HL-4140CN</h4>
+
+                <div class="price">Rs 22,000</div> 
+                <a href="homepage/prod4.html" class="btn">ADD TO CART</a>
+            </div>
+   
+            <div class="col-4">
+                <img src="images/H5.png">
+                <h4>HP LaserJet Pro</h4>
+
+                <p>Rs. 35,000</p>
+                <a href="homepage/prod5.html" class="btn">ADD TO CART</a>
+            </div>
+   
+            <div class="col-4">
+                <img src="images/D5.png">
+                <h4>Dell S380cdn color laser printer</h4>
+
+                <p>Rs. 44,000</p>
+                <a href="homepage/prod6.html" class="btn">ADD TO CART</a>
+            </div>
+   
+            <div class="col-4">
+                <img src="images/B5.png">
+                <h4>Brother HL-4570SCDW printer</h4>
+
+                <p>Rs. 30,000</p>
+                <a href="homepage/prod7.html" class="btn">ADD TO CART</a>
+            </div>
+   
+            <div class="col-4">
+                <img src="images/canonpixma.png">
+                <h4>Canon Pixma G670 All-In-One 6-Colour Ink Tank Wi-Fi Photo Printer</h4>
+
+                <p>Rs. 38,000</p>
+                <a href="homepage/prod8.html" class="btn">ADD TO CART</a>
+            </div>
+        </div>
+    </div>
+    <!-------- offer --------->
+    <div class="offer">
+   
+        <div class="small-container">
+   
+            <div class="row">
+   
+                <div class="col-2">
+                    <img src="images/p1.jpg" class="offer-img">
+
+                </div>
+   
+                <div class="col-2">
+                    <img src="" class="smart-printer"
+                    <p>Exclusively Available on Skytech</p>
+                    <h1>HP Smart Tank 750 Wireless Color All-in-One Inkjet Printer</h1>
+                    <small>HP Smart Tank 750 All-in-One Printer, Wireless, Print, Copy, Scan, 35-Sheet ADF, Bluetooth LE, Hi-Speed USB 2.0, LAN, Up to 15/9 ppm (Black/Color), 250-sheet Input Tray, Color, 6UU47A. Is Available here</small>
+                    <br><br>
+                    <p>Rs 90,000</p>
+                    <a href="homepage/exclusive1.html" class="btn">Buy Now &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------- footer--------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/playstore.logo.png">
+                        <img src="images/appstore.logo.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/sky.png">
+                    <p>Our purpose is to sustainable make the pleasure and
+                        banefits of printing accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>Blog post</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com"><li>Facebook</li></a>
+                        <a href="https://twitter.com"><li>Twitter</li></a>
+                        <a href="https://www.instagram.com"><li>Instagram</li></a>
+                        <a href="https://www.youtube.com"><li>Youtube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Account</title>
+    <script defer src="../js/accountscript.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="informations">
+        <p class="info1"> contact:9823918301 || email:skytech5710@gmail.com || address:putalisadak, Kathmandu</p>
+     </div>
+     <div class="header">
+         <div class="container">
+             <div class="navbar">
+                 <div class="logo">
+                     <a href="../index.html"> <img src="../images/Sky-TECH.png" width="125px"></a>
+                 </div>
+                 <nav>
+                     <ul id="MenuItems">  
+                        
+                         <li><a href="product.html">Products</a></li>
+                         <li><a href="blog page.html">Blog</a></li>
+                         <li><a href="r1.html">Research</a></li>
+                         <li><a href=""><img src="../images/cartlogo.png" class="cartlogo" width="30px" height="30px"></a></li>
+                         <li><a href="sign.html">Account</a></li>
+                         <li><a href="about us.html">About Us</a></li>                        
+                     </ul>
+                 </nav>
+                 
+                 <img src="../images/menulogo.png" class="menu-icon" onclick="menutoggle()">
+             </div>
+         </div>
+     </div>
+    <div class="container">
+        <form id="form" action="/" onsubmit="validate()">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+            <a href="sign.html" class="new" ><u> Already have a account?</u></a>
+        </form>
+        <script>
+            function validate(){
+                var uname=document.forms["form"]["username"].value;
+                var email=document.forms["form"]["email"].value;
+                var password=document.forms["form"]["password"].value;
+                var password2=document.forms["form"]["password2"].value;		
+    
+                if(uname==""||email==""||password==""||password2==""){
+                    alert("Fields are empty");
+                }
+                else{
+                    alert("You have successfully created a account");
+                }
+    
+            }
+            </script>
+    </div>
+     <!--------- footer--------->
+
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../images/playstore.logo.png">
+                        <img src="../images/appstore.logo.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/sky.png">
+                    <p>Our purpose is to sustainable make the pleasure and
+                        banefits of printing accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>Blog post</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com"><li>Facebook</li></a>
+                        <a href="https://twitter.com"><li>Twitter</li></a>
+                        <a href="https://www.instagram.com"><li>Instagram</li></a>
+                        <a href="https://www.youtube.com"><li>Youtube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024</p>
+        </div>
+    </div>  
+</body>
+</html>

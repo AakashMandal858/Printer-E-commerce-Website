@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products-Sky-tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <head>
+
+    <body>
+        <div class="informations">
+            <p class="info1"> contact:9823918301 || email:skytech5710@gmail.com || address:putalisadak, Kathmandu</p>
+         </div>
+         <div class="header">
+             <div class="container">
+                 <div class="navbar">
+                     <div class="logo">
+                         <a href="../index.html"> <img src="../images/Sky-TECH.png" width="125px"></a>
+                     </div>
+                     <nav>
+                         <ul id="MenuItems">  
+                            
+                             <li><a href="../pages/product.html">Products</a></li>
+                             <li><a href="../pages/blog page.html">Blog</a></li>
+                             <li><a href="../pages/research.html">Research</a></li>
+                             <li><a href=""><img src="../images/cartlogo.png" class="cartlogo" width="30px" height="30px"></a></li>
+                             <li><a href="../pages/sign.html">Account</a></li>
+                             <li><a href="../pages/about us.html">About Us</a></li>                        
+                         </ul>
+                     </nav>
+                     
+                     <img src="../images/menulogo.png" class="menu-icon" onclick="menutoggle()">
+                 </div>
+             </div>
+         </div>
+        <!--------- single product details ---------->
+
+        <div class="small-container single-product">
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="../images/b4.png" width="100%" id="ProductImg">
+
+                    <div class="small-img-row">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p></p>
+                    <h1>Brother HL-4140CN</h1>
+                    <h3>Products Details<i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p> The HL-4140CN offers professional quality printing at up to 2,400dpi for consistently excellent results. With a fast, efficient colour and mono print speed of 22 pages per minute, this colour laser printer saves you a lot of time and increases productivity in the office.</p>
+                    <h1>Rs. 22,000</p>
+                    <input type="number" value="1">
+                    <button onclick="addToCart()" class="btn">Add to Cart</button>
+                        <div id="cart-popup" class="cart-popup">
+                            <span class="close-btn" onclick="closePopup()">&times;</span>
+                            <p>Added to cart!</p>
+                        </div>
+            <script src="../js/script.js"></script>
+                </div>
+            </div>
+        </div>
+       
+        <!--------- footer--------->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="../images/playstore.logo.png">
+                            <img src="../images/appstore.logo.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="../images/sky.png">
+                        <p>Our purpose is to sustainable make the pleasure and
+                            banefits of printing accessible to the many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Link</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>Blog post</li>
+                            <li>Return policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <a href="https://www.facebook.com"><li>Facebook</li></a>
+                            <a href="https://twitter.com"><li>Twitter</li></a>
+                            <a href="https://www.instagram.com"><li>Instagram</li></a>
+                            <a href="https://www.youtube.com"><li>Youtube</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 - SKY TECH</p>
+            </div>
+        </div>
+        <!-------- js for toggle menu --------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0PX";
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+        
+    </body>
+
+</html>
